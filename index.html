@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Budget App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Budget-App</h1>
+
+    <div class="balance">
+      <div>Einnahmen: <span id="incomeTotal">0,00 €</span></div>
+      <div>Ausgaben: <span id="expenseTotal">0,00 €</span></div>
+      <div class="saldo">Saldo: <span id="balanceTotal">0,00 €</span></div>
+    </div>
+
+    <form id="entryForm" class="entry-form">
+      <input id="desc" type="text" placeholder="Beschreibung" required />
+      <input id="amount" type="number" step="0.01" placeholder="Betrag" required />
+      <select id="type">
+        <option value="income">Einnahme</option>
+        <option value="expense">Ausgabe</option>
+      </select>
+      <button type="submit">Hinzufügen</button>
+    </form>
+
+    <ul id="entriesList" class="entries"></ul>
+
+    <p class="hint">Klick auf einen Eintrag zum Löschen.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

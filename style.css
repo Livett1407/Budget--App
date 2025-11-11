@@ -1,0 +1,31 @@
+* { box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  background:#f7f7fb;
+  margin:0;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  min-height:100vh;
+  padding:40px 0;
+}
+.container {
+  width:380px;
+  background:#fff;
+  padding:18px;
+  border-radius:10px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+h1 { margin:0 0 12px 0; font-size:20px; }
+.balance { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+.balance .saldo { grid-column:1 / -1; font-weight:700; margin-top:6px; }
+.entry-form { display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap; }
+.entry-form input, .entry-form select { padding:8px; border:1px solid #ddd; border-radius:6px; flex:1; }
+.entry-form button { padding:8px 12px; border:none; background:#2d8cff; color:#fff; border-radius:6px; cursor:pointer; }
+.entries { list-style:none; padding:0; margin:0; max-height:300px; overflow:auto; }
+.entries li { display:flex; justify-content:space-between; align-items:center; padding:8px; border-bottom:1px solid #f0f0f0; }
+.entries li .meta { font-size:13px; color:#333; }
+.entries li .amt { font-weight:700; }
+.entries li.income { background:#eefaf5; }
+.entries li.expense { background:#fff6f6; }
+.hint { font-size:12px; color:#666; margin-top:10px; text-align:center; }
